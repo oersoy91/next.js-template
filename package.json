@@ -7,8 +7,12 @@
     "build": "next build",
     "start": "next start",
     "eslint": "eslint .",
-    "stylelint": "stylelint '**/*.css'",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "prettycheck": "prettier --check .",
+    "stylelint": "stylelint \"**/*.css\"",
+    "typecheck": "tsc",
+    "test": "npm run eslint && npm run stylelint && npm run prettycheck && npm run typecheck",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "10.0.8",
@@ -23,6 +27,8 @@
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-react": "^7.22.0",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-prettier": "^8.0.2",
@@ -30,4 +36,3 @@
     "typescript": "^4.2.3"
   }
 }
-
