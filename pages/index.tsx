@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Button primary label="Primary" />
+        <Button primary label="Primaryaaaaaa" />
         <Button primary={false} label="Secondary" />
       </main>
     </div>
